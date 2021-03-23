@@ -1,17 +1,19 @@
 import React from "react"
-import Sidebar from "../components/sidebar.js"
+import SideBar from "../components/sidebar.js"
 import ContentArea from "../Components/contentarea.js"
-import * as styles from "../styles/global.css"
+import "../styles/global.css"
 
 export default function Home() {
   return ( <>
     <title>Linktera Ailem</title>
-      <div>
-        <Sidebar />
+    <div className="flex">
+      <div className="SideBar">
+        <SideBar />
       </div>
-    <div>
+      <div className="ContentArea">
         <ContentArea />
       </div>
+    </div>
 
   </> )
 }

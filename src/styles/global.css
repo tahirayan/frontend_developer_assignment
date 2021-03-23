@@ -3,3 +3,19 @@ body {
     border: solid 1px #707070;
     margin: 0;
 }
+
+.flex {
+    display: flex;
+}
+
+.SideBar {
+    height: 100vh;
+}
+
+.ContentArea {
+    width: calc(100vw - 278px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}

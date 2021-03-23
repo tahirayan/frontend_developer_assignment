@@ -5,7 +5,7 @@ import photo from "../images/assets/img-ar-ge-ve-urun-yonetimi-8305_large@2x.png
 import arrow from "../images/assets/play_arrow-1@2x.png"
 import right from "../images/assets/keyboard_arrow_right-1.png"
 
-export default function Sidebar() {
+export default function SideBar() {
     return ( <>
         <div className={styles.sideBar}>
             <div className={styles.sideBarWrapper}>

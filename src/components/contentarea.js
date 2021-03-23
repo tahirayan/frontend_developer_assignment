@@ -1,90 +1,91 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import * as styles from "./contentarea-css-modules.module.css"
-import burger from "../images/assets/play_arrow-1@2x.png"
-import BackgroundSlider from 'gatsby-image-background-slider'
+import burger from "../images/assets/hamburger.svg"
+import slide from "../images/assets/2020 başvuru_duyuru@2x.png"
+import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
+import JSONEmployees from "../data/employees.json"
 
 export default function ContentArea() {
     return (
         <>
-            <div className={styles.contentArea}>
                 <div className={styles.topBar}>
                     <h3>Merhaba Anıl, Hoş Geldin !</h3>
-                    <div className={styles.searchBar}>
-                        <input
-                        type="text"
-                        id="header-search"
-                        name="s"
-                        />
-                    <button type="submit">Search</button>
-                    </div>
-                    <img src={burger} alt={""} />
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <BackgroundSlider
-                                query={useStaticQuery(graphql`
-                                            query {
-                                              backgrounds: allFile (filter: {sourceInstanceName: {eq: "backgrounds"}}){
-                                                nodes {
-                                                  relativePath
-                                                  childImageSharp {
-                                                    fluid (maxWidth: 4000, quality: 100){
-                                                      ...GatsbyImageSharpFluid
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          `)}
-                                initDelay={2} // delay before the first transition (if left at 0, the first image will be skipped initially)
-                                transition={4} // transition duration between images
-                                duration={8} // how long an image is shown
-                                // specify images to include (and their order) according to `relativePath`
-                                images={["2020 başvuru_duyuru.png", "2020 başvuru_duyuru.png", "2020 başvuru_duyuru.png"]}
-
-                                // pass down standard element props
-                                style={{
-                                    transform: "rotate(-2deg) scale(.9)",
-                                }}
-                            >
-                                {/* Captions in sync with background images*/}
-                                <div>Woof</div>
-                                <div>Meow</div>
-                                <>{/* Giraffes don't talk; [they aren't real](https://chivomengro.com/2017/10/23/the-truth-comes-out-giraffes-are-a-hoax/) */}</>
-                                <a href="https://en.wikipedia.org/wiki/Tasmanian_devil#Conservation_status">
-                                    I could use a hand
-                                </a>
-                                <div>I need to find better hobbies</div>
-                            </BackgroundSlider>
-
+                    <div className={styles.topBarRight}>
+                        <div className={styles.searchBar}>
+                            <input
+                            type="text"
+                            id="header-search"
+                            name="s"
+                            />
+                            <button type="submit"> </button>
                         </div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
+                        <img src={burger} alt={""} />
                     </div>
                 </div>
-            </div>
+                <div className={styles.content}>
+                    <div className={styles.contentLeft}>
+                        <div className={styles.contentLeftTop}>
+                            <div className={styles.slider}>
+                                <Helmet>
+                                    <script src={withPrefix('script.js')} type="text/javascript" />
+                                </Helmet>
+                                <div className="slides">
+                                    <div className={styles.slidesHeader}>Duyurular</div>
+                                    <img src={slide} style={{width: "max-width: 812px" ,
+                                        height: "408px"}}/>
+                                </div>
 
+                                <a className={styles.prev} onClick="plusSlides(-1)">&#10094;</a>
+                                <a className={styles.next} onClick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <div className={styles.birthdays}>
+                                <h3>Doğum Günleri</h3>
+                                <div className={styles.employeeAvatar}>
+                                    {JSONEmployees.map((data, index) => {
+                                        return <img key={`_${index}`}>{data.avatar}</img>
+                                    })}
+                                </div>
 
+                            </div>
+
+                        </div>
+                        <div className={styles.contentLeftMiddle}>
+                            <div className={styles.news}>
+
+                            </div>
+                            <div className={styles.newMembers}>
+
+                            </div>
+
+                        </div>
+                        <div className={styles.contentLeftBottom}>
+                            <div className={styles.phone}>
+
+                            </div>
+                            <div className={styles.documents}>
+
+                            </div>
+                            <div className={styles.revisions}>
+
+                            </div>
+                            <div className={styles.statementOfExpense}>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.contentRight}>
+                        <div className={styles.calendar}>
+
+                        </div>
+                        <div className={styles.openPoisitons}>
+
+                        </div>
+                        <div className={styles.advertisements}>
+
+                        </div>
+                    </div>
+                </div>
         </>
     )
 }

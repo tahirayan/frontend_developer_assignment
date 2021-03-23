@@ -1,7 +1,6 @@
-.contentArea {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+* {
+    font-family: "Poppins-Regular" , sans-serif;
+    color: #fff;
 }
 
 .topBar {
@@ -9,8 +8,148 @@
     align-items: center;
     justify-content: space-between;
     background: #ebebeb;
+    width: 1296px;
+    padding: 0 35px;
 }
-.searchBar {
-    width: 450px;
+
+.topBar h3 {
+    font-size: 26px;
+    font-family: 'Poppins-SemiBold', sans-serif;
+    color: #0065B2;
+}
+
+.topBarRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 575px;
     height: 45px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: solid 1px #1888DD;
+    border-radius: 45px;
+    width: 445px;
+    background: rgba(24, 136, 221, 0.1);
+}
+
+.searchBar input[type=text] {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 45px;
+    width: 385px;
+    height: 40px;
+    color: #294572;
+
+}
+
+.searchBar button[type=submit] {
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    background: url("../images/assets/search.svg") no-repeat;
+    background-size: 24px;
+}
+
+.searchBar input[type=text]:focus {
+    color: #294572;
+}
+
+.topBar img {
+    width: 35px;
+    height: 35px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.contentLeft {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contentLeftTop {
+    display: flex;
+    justify-content: space-between;
+}
+.slider {
+    position: relative;
+    max-width: 812px;
+    max-height: 408px;
+
+}
+.slidesHeader {
+    position: absolute;
+    font-family: 'Poppins-Bold', sans-serif;
+    color: #05152E;
+    font-size: 21px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.birthdays {
+    width: 260px;
+    height: 411px;
+}
+.employeeAvatar {
+    width: 78px;
+    height: 78px;
+}
+.contentLeftMiddle {
+
+}
+.news {
+
+}
+.newMembers {
+    width: 260px;
+    height: 411px;
+}
+.contentLeftBottom {
+
+}
+.phone {
+
+}
+.documents {
+
+}
+.revisions {
+
+}
+.statementOfExpense {
+
+}
+.contentRight {
+
+}
+.calendar {
+
+}
+.openPoisitons {
+
+}
+.advertisements {
+
 }
