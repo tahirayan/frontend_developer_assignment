@@ -1,0 +1,17 @@
+.contentArea {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ebebeb;
+    width: 70vw;
+}
+.searchBar {
+    width: 450px;
+    height: 45px;
+}
