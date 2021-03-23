@@ -6,8 +6,12 @@ import * as styles from "../styles/global.css"
 export default function Home() {
   return ( <>
     <title>Linktera Ailem</title>
-      <div className={styles.SideBar}>
+      <div>
         <Sidebar />
       </div>
+    <div>
+        <ContentArea />
+      </div>
+
   </> )
 }

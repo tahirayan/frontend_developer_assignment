@@ -29,27 +29,27 @@ export default function Sidebar() {
                         <div><img src={right} alt={""} /><a href={"https://www.youtube.com/channel/UCLso6-PsSNgnSU1ZW2Fva7Q"} className={styles.links}>Youtube Kanalı</a></div>
                         <div><img src={right} alt={""} /><a href={"https://www.linktera.com.tr/"} className={styles.links}>Oryantasyon Sunumu</a></div>
                     </div>
-                    <div className={styles.wrapper}>
+                    <div className={styles.buttonWrapper}>
                         <img src={arrow} alt={""} />
                         <button className={styles.accordion}>Zaman Girişi</button>
                     </div>
-                    <div className={styles.wrapper}>
+                    <div className={styles.buttonWrapper}>
                         <img src={arrow} alt={""} />
                         <button className={styles.accordion}>İzinlerim</button>
                     </div>
-                    <div className={styles.wrapper}>
+                    <div className={styles.buttonWrapper}>
                         <img src={arrow} alt={""} />
                         <button className={styles.accordion}>Bilgi Bankası</button>
                     </div>
-                    <div className={styles.wrapper}>
+                    <div className={styles.buttonWrapper}>
                         <img src={arrow} alt={""} />
                         <button className={styles.accordion}>ArGe Portalı</button>
                     </div>
-                    <div className={styles.wrapper}>
+                    <div className={styles.buttonWrapper}>
                         <img src={arrow} alt={""} />
                         <button className={styles.accordion}>Mesajlar</button>
                     </div>
-                    <div className={styles.wrapper}>
+                    <div className={styles.buttonWrapper}>
                         <img src={arrow} alt={""} />
                         <button className={styles.accordion}>Yardım</button>
                     </div>
