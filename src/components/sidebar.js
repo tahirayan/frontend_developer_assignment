@@ -14,7 +14,7 @@ export default function SideBar() {
                     <img src={photo} className={styles.photo} alt={"Anıl Tangül"} />
                 </div>
                 <div className={styles.info}>
-                    <h2>Deniz Arkan</h2>
+                    <h2>Anıl Tangül</h2>
                     <p>Ürün Yönetimi Direktör</p>
                 </div>
 

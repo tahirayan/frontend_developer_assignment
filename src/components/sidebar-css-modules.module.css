@@ -1,6 +1,5 @@
 * {
     font-family: "Poppins-Regular" , sans-serif;
-    color: #fff;
 }
 
 .sideBar {
@@ -18,6 +17,7 @@
     flex-direction: column;
     height: 90%;
     width: 278px;
+    color: #fff;
 }
 
 .imgWrapper {
@@ -47,12 +47,14 @@
     background: rgba(230, 244, 244, 0.2);
     width: 260px;
     height: 115px;
+    color: #fff;
 }
 
 .info h2 {
     margin: 0;
     font-family: 'Poppins-Medium', sans-serif;
     font-size: 29px;
+    color: #fff;
 }
 
 .nav {
@@ -60,6 +62,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: #fff;
 }
 
 .buttonWrapper {
@@ -68,6 +71,7 @@
     justify-content: center;
     height: 45px;
     margin: 2px;
+    color: #fff;
 }
 
 .nav img {
@@ -83,11 +87,13 @@
     border: solid 1px rgba(256, 256, 256, 0.1);
     font-family: 'Poppins-Light', sans-serif;
     font-size: 18px;
+    color: #fff;
 }
 
 .panel {
     margin: 5px;
     width: 185px;
+    color: #fff;
 }
 
 .links {
@@ -95,7 +101,7 @@
     font-size: 14px;
     line-height: 22px;
     text-decoration: none;
-
+    color: #fff;
 }
 
 .logout {
@@ -107,8 +113,10 @@
     background: rgba(230, 244, 244, 0.2);
     width: 265px;
     height: 80px;
+    color: #fff;
 }
 
 .logout p {
     margin-right: 15px;
+    color: #fff;
 }
