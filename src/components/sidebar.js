@@ -1,5 +1,6 @@
 import React from "react"
 import * as styles from "./sidebar-css-modules.module.css"
+import { Link } from "gatsby"
 import logo from "../images/assets/Linktera_Ailem_Logo@2x.png"
 import photo from "../images/assets/img-ar-ge-ve-urun-yonetimi-8305_large@2x.png"
 import arrow from "../images/assets/play_arrow-1@2x.png"
@@ -10,7 +11,7 @@ export default function SideBar() {
         <div className={styles.sideBar}>
             <div className={styles.sideBarWrapper}>
                 <div className={styles.imgWrapper}>
-                    <img src={logo} className={styles.logo} alt={"Linktera Ailem"} />
+                    <Link to="/"><img src={logo} className={styles.logo} alt={"Linktera Ailem"} /></Link>
                     <img src={photo} className={styles.photo} alt={"Anıl Tangül"} />
                 </div>
                 <div className={styles.info}>
@@ -31,7 +32,7 @@ export default function SideBar() {
                     </div>
                     <div className={styles.buttonWrapper}>
                         <img src={arrow} alt={""} />
-                        <button className={styles.accordion}>Zaman Girişi</button>
+                        <button className={styles.accordion}><Link to="/work">Zaman Girişi</Link></button>
                     </div>
                     <div className={styles.buttonWrapper}>
                         <img src={arrow} alt={""} />

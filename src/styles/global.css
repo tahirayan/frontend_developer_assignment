@@ -26,3 +26,31 @@ body {
 .react-calendar__tile {
     padding: 1px 6px !important;
 }
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: calc(100vw - 278px);
+    overflow: scroll;
+}
+
+.table table {
+    padding: 25px;
+    align-self: flex-start;
+    background: #fff;
+}
+
+.table table th, .table table td {
+    text-align: center;
+    border: solid 2px rgba(0,146,212,1);
+}
+
+@media screen and (min-width:1200px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+}

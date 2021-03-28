@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
     background: linear-gradient(90deg, rgba(0,156,220,1) 0%, rgba(0,146,212,1) 35%, rgba(0,140,208,1) 55%, rgba(0,100,176,1) 85%, rgba(0,74,135,1) 100%);
     height: 100vh;
     width: 278px;
@@ -25,6 +26,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.logoBtn {
+    width: 197px;
+    height: 46px;
+    background: transparent;
+    outline: none;
+    border: none;
 }
 
 .logo {
@@ -89,6 +98,8 @@
     font-size: 18px;
     color: #fff;
 }
+
+
 
 .panel {
     margin: 5px;
