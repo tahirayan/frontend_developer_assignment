@@ -35,7 +35,6 @@ body {
     width: calc(100vw - 278px);
     overflow: scroll;
 }
-
 .table table {
     padding: 25px;
     align-self: flex-start;
