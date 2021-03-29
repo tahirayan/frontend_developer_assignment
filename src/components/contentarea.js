@@ -52,9 +52,9 @@ export default function ContentArea() {
                                 slidesPerView={1}
                                 navigation>
 
-                                <SwiperSlide><img src={slide} /></SwiperSlide>
-                                <SwiperSlide><img src={slide} /></SwiperSlide>
-                                <SwiperSlide><img src={slide} /></SwiperSlide>
+                                <SwiperSlide><img src={slide} alt={""} /></SwiperSlide>
+                                <SwiperSlide><img src={slide} alt={""} /></SwiperSlide>
+                                <SwiperSlide><img src={slide} alt={""} /></SwiperSlide>
                             </Swiper>
                         </div>
                         <div className={styles.newsArea}>
